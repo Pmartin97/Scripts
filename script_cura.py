@@ -34,7 +34,7 @@ for i in numlineas:
     ficherosalida.write("M117 L=", layer,"/",numlayer," P=",p ,"%/n")
     layer += 1
   ficherosalida.write(linea)
-  if ( nl == porcentaje )
+  if ( nl >= porcentaje )
     ficherosalida.write("M117 L=", layer,"/",numlayer," P=",p ,"%/n")
     nl = 1
     p += 1
